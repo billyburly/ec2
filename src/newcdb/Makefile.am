@@ -3,7 +3,7 @@ newcdb_SOURCES = parsecmd.cpp cmdcommon.cpp cmdbreakpoints.cpp \
 	cmddisassemble.cpp cmdmaintenance.cpp main.cpp
 
 # set the include path found by configure
-INCLUDES = -I$(top_srcdir)/src/debug-core -I$(top_srcdir)/src/ec2drv \
+AM_CPPFLAGS = -I$(top_srcdir)/src/debug-core -I$(top_srcdir)/src/ec2drv \
 	$(all_includes)
 
 # the library search path.
